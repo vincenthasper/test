@@ -1,0 +1,13 @@
+[font]
+size = 13.0
+
+normal.family = "Terminess Nerd Font"
+normal.style = "Regular"
+
+[window]
+opacity = 0.6
+
+dynamic_padding = false
+
+padding.x = 6
+padding.y = 6
