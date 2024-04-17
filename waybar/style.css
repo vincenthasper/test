@@ -1,0 +1,36 @@
+* {
+    all: unset;
+    font-family: "FiraCode Nerd Font";
+    font-size: 13px;
+}
+
+/* #waybar {
+    background-color: rgba(28, 27, 25, 0.8);
+    border-bottom: 2px solid #e02c6d;
+} */
+
+#custom-run,
+#custom-code,
+#custom-windowsvm,
+#custom-kalivm,
+#custom-browser,
+#custom-terminal,
+#pulseaudio,
+#backlight,
+#bluetooth,
+#network,
+#battery,
+#clock {
+    color: #fce8c3;
+    padding: 6px 12px;
+    margin: 12px 12px 12px 0;
+    /* background-color: rgba(28, 27, 25, 0.8); */
+    background-color: #1c1b19;
+    border: 1px solid #595959;
+    border-radius: 12px;
+    box-shadow: 0 0 2px 0.4px rgba(0, 0, 0, 1);
+}
+
+#custom-run {
+    margin-left: 12px;
+}

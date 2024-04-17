@@ -1,0 +1,116 @@
+{
+    //"name": "topbar",
+    "layer": "top",
+    "position": "top",
+    //"height": 44,
+    //"width": 800,
+    //"spacing": 0,
+    //"margin-top": 12,
+    //"margin-bottom": 12,
+    //"margin-left": 12,
+    //"margin-right": 12,
+    "modules-left": [
+        "custom/run",
+        "custom/code",
+        "custom/windowsvm",
+        "custom/kalivm",
+	"custom/browser",
+	"custom/terminal"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+	"pulseaudio",
+	"backlight",
+	"bluetooth",
+	"network",
+	"battery",
+        "clock"
+    ],
+    "custom/run": {
+        "format": "🏃 Run",
+	"on-click": "",
+	"tooltip": false
+    },
+    "custom/code": {
+        "format": "🤖 Code",
+	"on-click": "foot nvim ~",
+	"tooltip": false
+    },
+    "custom/windowsvm": {
+        "format": "🪟 WindowsVM",
+	"on-click": "",
+	"tooltip": false
+    },
+    "custom/kalivm": {
+        "format": "🐉 KaliVM",
+	"on-click": "",
+	"tooltip": false
+    },
+    "custom/browser": {
+        "format": "🕸️ Browser",
+	"on-click": "firefox",
+	"tooltip": false
+    },
+    "custom/terminal": {
+        "format": "💻 Terminal",
+	"on-click": "foot",
+	"tooltip": false
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+	"format-bluetooth": "{icon} {volume}% {format_source}",
+        "format-bluetooth-muted": "{icon} {format_source}",
+	"format-muted": "🔇 Muted {format_source}",
+	"format-source": "🎤 {volume}%",
+	"format-source-muted": "🎤 Muted",
+	"format-icons": {
+	    "headphone": "🎧",
+            "default": ["🔈", "🔉", "🔊"]
+	},
+	"on-click": "",
+	"tooltip": false
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+	"format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
+	"on-click": "",
+	"device": "intel_backlight",
+	"tooltip": false
+
+    },
+    "bluetooth": {
+        "format": "🎧 {status}",
+	"format-disabled": "🎧 Disabled",
+	"format-connected": "🎧 {device_alias}",
+	"on-click": "",
+	"tooltip": false
+    },
+    "network": {
+        "format": "🛜 {essid}",
+        "format-wifi": "🛜 {essid}",
+        "format-ethernet": "🌐 {ipaddr}",
+        "format-disconnected": "🌐 Disconnected",
+	"on-click": "",
+	"tooltip": false
+    },
+    "battery": {
+	"format": "🔋 {capacity}%",
+	"format-warning": "🪫 {capacity}%",
+	"format-critical": "🪫 {capacity}%",
+	"format-charging": "🔌 {capacity}%",
+	"states": {
+	    "warning": 30,
+	    "critical": 15
+	},
+	"on-click": "",
+        "bat": "BAT0",
+	"interval": 60,
+	"tooltip": false
+    },
+    "clock": {
+        "format": "📅 {:%a %d %b %H:%M}",
+	"on-click": "",
+	"tooltip": false
+    }
+}
