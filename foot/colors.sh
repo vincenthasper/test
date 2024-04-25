@@ -1,7 +1,5 @@
 #!/bin/sh
 # ~/.local/bin/colors.sh
-packages=$(pacman -Q | wc -l)
-
 print_color_blocks() {
     for ((i=$1; i<$2; i++)); do
         printf "\e[48;5;${i}m   \e[0m"
@@ -9,6 +7,5 @@ print_color_blocks() {
     echo -ne "\n"
 }
 
-echo "Installed packages: $packages" 
 print_color_blocks 0 8
 print_color_blocks 8 16
