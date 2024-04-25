@@ -1,4 +1,5 @@
 #!/bin/sh
+# ~/.local/bin/colors.sh
 packages=$(pacman -Q | wc -l)
 
 print_color_blocks() {
