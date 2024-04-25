@@ -1,5 +1,7 @@
 # ~/.config/alacritty/alacritty.toml
 
+# See https://alacritty.org/config-alacritty.html
+
 # === Import ===
 import=[ 
     "~/.config/alacritty/themes/alacritty-theme/themes/gruvbox_dark.toml" 
