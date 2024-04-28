@@ -1,0 +1,93 @@
+#
+# ~/.config/alacritty/alacritty.toml 
+#
+
+#
+#  █████╗ ██╗      █████╗  ██████╗██████╗ ██╗████████╗████████╗██╗   ██╗
+# ██╔══██╗██║     ██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+# ███████║██║     ███████║██║     ██████╔╝██║   ██║      ██║    ╚████╔╝ 
+# ██╔══██║██║     ██╔══██║██║     ██╔══██╗██║   ██║      ██║     ╚██╔╝  
+# ██║  ██║███████╗██║  ██║╚██████╗██║  ██║██║   ██║      ██║      ██║   
+# ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝      ╚═╝   
+#
+# >> https://github.com/vincenthasper/dotfiles/alacritty/alacritty.toml
+#
+
+# See https://alacritty.org/config-alacritty.html for more.
+
+###############
+### GENERAL ###
+###############
+
+# Import additional configuration files.
+import = [
+    "~/.config/alacritty/themes/rose-pine.toml",
+]
+
+###########
+### ENV ###
+###########
+
+[env] 
+
+# Use `xterm-256color` for better color support in terminal applications.
+TERM = "xterm-256color"
+
+##############
+### WINDOW ###
+##############
+
+[window]
+
+# Blank space around the window in pixels. This padding is scaled by DPI and 
+# the specified value is always added at both opposing sides.
+padding = { x = 12, y = 12 } # Default: { x = 0, y = 0 }
+
+# Background opacity as a floating point number from 0.0 to 1.0. The value
+# 0.0 is completely transparent and 1.0 is opaque.
+opacity = 1.0 # Default: 1.0
+
+############
+### FONT ###
+############
+
+[font] 
+
+# Normal font style
+normal = { family = "monospace", style = "Regular" }
+
+# Bold font style
+bold = { family = "monospace", style = "Regular" }
+
+# Italic font style
+italic = { family = "FiraCode Nerd Font", style = "Regular" }
+
+# Bold Italic font style
+bold_italic = { family = "FiraCode Nerd Font", style = "Regular" }
+
+# Font size in points.
+size = 11.25 # Default: 11.25
+
+##############
+### CURSOR ###
+##############
+
+[cursor]
+
+# Cursor style
+style = { shape = "Underline", blinking = "On" } # Default: shape = "Block", blinking = "Off"
+
+# Cursor blinking interval in milliseconds.
+blink_interval = 200 # Default: 750
+
+# Time after which cursor stops blinking, in seconds. Specifying 0 will 
+# disable timeout for blinking.
+blink_timeout = 0 # Default: 5
+
+# When this is true, the cursor will be rendered as a hollow box when 
+# the window is not focused.
+unfocused_hollow = false # Default: true
+
+# Thickness of the cursor relative to the cell width as floating point 
+# number from 0.0 to 1.0.
+thickness = 0.20 # Default: 0.15
