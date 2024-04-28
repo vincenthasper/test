@@ -55,10 +55,10 @@ normal = { family = "monospace", style = "Regular" }
 bold = { family = "monospace", style = "Regular" }
 
 # Italic font style
-italic = { family = "FiraCode Nerd Font", style = "Regular" }
+italic = { family = "monospace", style = "Regular" }
 
 # Bold Italic font style
-bold_italic = { family = "FiraCode Nerd Font", style = "Regular" }
+bold_italic = { family = "monospace", style = "Regular" }
 
 # Font size in points.
 size = 11.25 # Default: 11.25
