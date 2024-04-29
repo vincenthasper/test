@@ -1,76 +1,47 @@
+# Alacritty Configuration File
 # ~/.config/alacritty/alacritty.toml
 #
-# Alacritty configuration file.
-# For more information, visit: https://alacritty.org/config-alacritty.html
+# For more information on configuring Alacritty, visit:
+# https://alacritty.org/config-alacritty.html
 
-# Import additional configuration files.
+# Import additional configuration files if needed
 import = [
-    "~/.config/alacritty/themes/rose-pine.toml",  # Import theme settings
+    "~/.config/alacritty/themes/rose-pine.toml",
 ]
 
-###########
-### ENV ###
-###########
+# Environment Variables
+[env]
+    TERM = "xterm-256color"
 
-[env] 
-
-# Set terminal type for better color support in terminal applications.
-TERM = "xterm-256color"
-
-##############
-### WINDOW ###
-##############
-
+# Window Settings
 [window]
+    # Padding around the window in pixels
+    padding = { x = 12, y = 12 }
+    # Background opacity as a floating point number from 0.0 to 1.0
+    opacity = 1.0
 
-# Padding around the window in pixels.
-# This padding is scaled by DPI, and the specified value is added to both opposing sides.
-padding = { x = 12, y = 12 }  # Default: { x = 0, y = 0 }
+# Font Settings
+[font]
+    # Normal font style
+    normal = { family = "monospace", style = "Regular" }
+    # Bold font style
+    bold = { family = "monospace", style = "Regular" }
+    # Italic font style
+    italic = { family = "monospace", style = "Regular" }
+    # Bold Italic font style
+    bold_italic = { family = "monospace", style = "Regular" }
+    # Font size in points
+    size = 11.25
 
-# Background opacity as a floating point number from 0.0 to 1.0.
-# 0.0 is completely transparent and 1.0 is opaque.
-opacity = 1.0  # Default: 1.0
-
-############
-### FONT ###
-############
-
-[font] 
-
-# Normal font style
-normal = { family = "monospace", style = "Regular" }
-
-# Bold font style
-bold = { family = "monospace", style = "Regular" }
-
-# Italic font style
-italic = { family = "monospace", style = "Regular" }
-
-# Bold Italic font style
-bold_italic = { family = "monospace", style = "Regular" }
-
-# Font size in points.
-size = 11.25  # Default: 11.25
-
-##############
-### CURSOR ###
-##############
-
+# Cursor Settings
 [cursor]
-
-# Cursor style: "Block", "Underline", or "Beam"
-style = { shape = "Underline", blinking = "On" }  # Default: shape = "Block", blinking = "Off"
-
-# Cursor blinking interval in milliseconds.
-blink_interval = 200  # Default: 750
-
-# Time after which cursor stops blinking, in seconds.
-# Specifying 0 will disable timeout for blinking.
-blink_timeout = 0  # Default: 5
-
-# Render cursor as a hollow box when the window is not focused.
-unfocused_hollow = false  # Default: true
-
-# Thickness of the cursor relative to the cell width.
-# Value is a floating point number from 0.0 to 1.0.
-thickness = 0.20  # Default: 0.15
+    # Cursor style: "Block", "Underline", or "Beam"
+    style = { shape = "Underline", blinking = "On" }
+    # Cursor blinking interval in milliseconds
+    blink_interval = 200
+    # Time after which cursor stops blinking, in seconds
+    blink_timeout = 0
+    # Render cursor as a hollow box when the window is not focused
+    unfocused_hollow = false
+    # Thickness of the cursor relative to the cell width
+    thickness = 0.20
