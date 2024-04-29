@@ -10,6 +10,8 @@ import = [
 
 # Environment Variables
 [env]
+    # Set terminal type for better color support in terminal applications
+    # "xterm-256color" provides extended color support
     TERM = "xterm-256color"
 
 # Window Settings
@@ -22,10 +24,10 @@ import = [
 # Font Settings
 [font]
     # Font settings for normal, bold, italic, and bold italic styles
-    normal = { family = "monospace", style = "Regular" }
-    bold = { family = "monospace", style = "Regular" }
-    italic = { family = "monospace", style = "Regular" }
-    bold_italic = { family = "monospace", style = "Regular" }
+    normal = { family = "FiraCode Nerd Font", style = "Regular" }
+    bold = { family = "FiraCode Nerd Font", style = "Regular" }
+    italic = { family = "FiraCode Nerd Font", style = "Regular" }
+    bold_italic = { family = "FiraCode Nerd Font", style = "Regular" }
     # Font size in points
     size = 11.25
 
