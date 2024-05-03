@@ -3,15 +3,16 @@
 #
 # For more information on configuring Alacritty, visit: https://alacritty.org/config-alacritty.html
 
-import = [
-    "~/.config/alacritty/themes/rose-pine.toml",
-]
+#import = [
+#    "~/.config/alacritty/themes/rose-pine.toml",
+#]
 
 [env]
-TERM = "xterm-256color"
+#TERM = "xterm-256color"
 
 [window]
 padding = { x = 0, y = 0 }
+dynamic_padding = false
 opacity = 1.0
 
 [font]
