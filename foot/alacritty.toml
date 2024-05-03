@@ -22,6 +22,9 @@ italic = { family = "FiraCode Nerd Font", style = "Regular" }
 bold_italic = { family = "FiraCode Nerd Font", style = "Regular" }
 size = 11.25
 
+[selection]
+save_to_clipboard = true
+
 [cursor]
 style = { shape = "Underline", blinking = "On" }
 blink_interval = 200
