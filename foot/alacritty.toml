@@ -7,6 +7,8 @@
 #    "~/.config/alacritty/themes/rose-pine.toml",
 #]
 
+live_config_reload = true
+
 [env]
 #TERM = "xterm-256color"
 
