@@ -3,19 +3,15 @@
 #
 # For more information on configuring Alacritty, visit: https://alacritty.org/config-alacritty.html
 
-# Import additional configuration files if needed
 import = ["~/.config/alacritty/themes/rose-pine.toml"]
 
-# Environment Variables
 [env]
 TERM = "xterm-256color"
 
-# Window Settings
 [window]
 padding = { x = 0, y = 0 }
 opacity = 1.0
 
-# Font Settings
 [font]
 normal = { family = "FiraCode Nerd Font", style = "Regular" }
 bold = { family = "FiraCode Nerd Font", style = "Regular" }
@@ -23,7 +19,6 @@ italic = { family = "FiraCode Nerd Font", style = "Regular" }
 bold_italic = { family = "FiraCode Nerd Font", style = "Regular" }
 size = 11.25
 
-# Cursor Settings
 [cursor]
 style = { shape = "Underline", blinking = "On" }
 blink_interval = 200
