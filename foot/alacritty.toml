@@ -27,8 +27,8 @@ size = 11.25
 save_to_clipboard = true
 
 [cursor]
-#style = { shape = "Underline", blinking = "On" }
-#blink_interval = 200
-#blink_timeout = 0
-#unfocused_hollow = false
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 200
+blink_timeout = 0
+unfocused_hollow = false
 #thickness = 0.20
