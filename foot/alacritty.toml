@@ -1,6 +1,6 @@
-import = [
-    "~/.config/alacritty/themes/gruvbox.toml",
-]
+#import = [
+#    "~/.config/alacritty/themes/gruvbox.toml",
+#]
 
 live_config_reload = true
 
@@ -27,8 +27,8 @@ size = 11.25
 save_to_clipboard = true
 
 [cursor]
-style = { shape = "Underline", blinking = "On" }
-blink_interval = 200
-blink_timeout = 0
-unfocused_hollow = false
-thickness = 0.20
+#style = { shape = "Underline", blinking = "On" }
+#blink_interval = 200
+#blink_timeout = 0
+#unfocused_hollow = false
+#thickness = 0.20
